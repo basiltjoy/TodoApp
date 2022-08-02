@@ -1,0 +1,27 @@
+<div class="row bg-success justify-content-center
+            align-items-center" style="height:80px">
+    <div class="col-3 text-light h2">
+        ToDo
+    </div>
+</div>
+
+<div style="height: 30px;"></div>
+<div *ngIf="!Task">
+    <span style="color: red; margin-left: 33.7%; padding-bottom: 5px;" >
+        Enter a Task to add into the Todo List</span>
+</div>
+ 
+<div class="mt-2 col-md-3 bg-success d-flex 
+justify-content-center align-items-center 
+text-light h4" style="margin-left: 25%;">
+    <div class="col-md-8 d-flex">
+        <input type="text" [(ngModel)]="Task" style="width:200px; text-align: center;">
+        <div *ngIf="Task">
+            <button (click)="addToList()" class="btn btn-light text-success" style="margin-left: 30px;">
+                ADD TASK
+            </button>
+        </div>
+    </div>
+
+
+</div>

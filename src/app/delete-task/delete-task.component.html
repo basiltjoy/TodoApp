@@ -1,0 +1,11 @@
+
+<div *ngFor="let items of array; let i = index">
+    <div class="d-flex bg-success w-25 p-3" style="margin-top: 5px; margin-left: 25%; ">
+        <div class="col-4 text-light h5"></div>
+        <div>
+            <input type="checkbox" [checked]="!items" (change)="onChange($event, i)"
+            title='Select the task you want to remove'>
+        </div>
+        <h3 style="margin-top: -10px;">&nbsp;&nbsp;{{items}}</h3>
+    </div>
+</div>
