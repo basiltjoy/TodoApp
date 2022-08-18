@@ -6,6 +6,8 @@ import { TodoServiceService } from '../todo-service.service';
   templateUrl: './addtask.component.html',
   styleUrls: ['./addtask.component.css']
 })
+
+
 export class AddtaskComponent implements OnInit {
 
   Task: any;

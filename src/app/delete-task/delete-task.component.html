@@ -1,11 +1,24 @@
 
-<div *ngFor="let items of array; let i = index">
-    <div class="d-flex bg-success w-25 p-3" style="margin-top: 5px; margin-left: 25%; ">
-        <div class="col-4 text-light h5"></div>
-        <div>
-            <input type="checkbox" [checked]="!items" (change)="onChange($event, i)"
-            title='Select the task you want to remove'>
+
+<div class="container content">
+    <div class="row">
+        <div class="col-md-6">
+
+
+            <div *ngFor="let items of array; let i = index">
+                <div class="d-flex bg-success  col-lg-12" > 
+                    <div class="col-4 text-light h5"></div>
+                    <div style="margin-top: 3px;">
+                        <input type="checkbox" [checked]="!items" (change)="onChange($event, i)"
+                        title='Select the task you want to remove'>
+                    </div>
+                    <div class="badge badge-primary text-wrap col-lg-12" style="width: 6rem;">
+                        {{items}}
+                      </div>
+                </div>
+            </div>
+
+
         </div>
-        <h3 style="margin-top: -10px;">&nbsp;&nbsp;{{items}}</h3>
     </div>
 </div>
