@@ -1,18 +1,14 @@
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"], {
-  /***/
-  "./$$_lazy_route_resource lazy recursive":
+  /***/"./$$_lazy_route_resource lazy recursive":
   /*!******************************************************!*\
     !*** ./$$_lazy_route_resource lazy namespace object ***!
     \******************************************************/
-
   /*! no static exports found */
-
   /***/
   function $$_lazy_route_resourceLazyRecursive(module, exports) {
     function webpackEmptyAsyncContext(req) {
@@ -24,225 +20,163 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         throw e;
       });
     }
-
     webpackEmptyAsyncContext.keys = function () {
       return [];
     };
-
     webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
     module.exports = webpackEmptyAsyncContext;
     webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
+
     /***/
   },
 
-  /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/addtask/addtask.component.html":
+  /***/"./node_modules/raw-loader/dist/cjs.js!./src/app/addtask/addtask.component.html":
   /*!**************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/addtask/addtask.component.html ***!
     \**************************************************************************************/
-
   /*! exports provided: default */
-
   /***/
   function node_modulesRawLoaderDistCjsJsSrcAppAddtaskAddtaskComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
+    __webpack_exports__["default"] = "<div class=\"row bg-success justify-content-center align-items-center\" style=\"height:80px\">\n    <div class=\"col-1 text-light h2 \">\n        ToDo\n    </div>\n</div>\n<div class=\"card-body mx-5\">\n    <div class=\"col-md-4 mx-5\" *ngIf=\"!Task\">\n        <span style=\"color: red;font-weight: bold;\">\n            Enter a Task to add into the Todo List</span>\n    </div>\n</div>\n<div class=\"card-body\">\n    <div class=\"container\">\n        <div class=\"card\">\n            <div class=\"row\">\n                <div class=\"col-lg-6\">\n                    <div class=\"card-body\">\n                        <div class=\"row  mx-5\">\n                            <div class=\" d-flex justify-content-center align-items-center \n                                text-light h4\">\n                                <div class=\"d-flex mx-5\">\n                                    <input type=\"text\" [(ngModel)]=\"Task\" style=\"width:220px; text-align: center;\">\n                                    <div *ngIf=\"Task\">\n                                        <button (click)=\"addToList()\" class=\"btn btn-light text-success\" style=\"margin-left: 30px;\">\n                                            ADD TASK\n                                        </button>\n                                    </div>\n                                </div>\n                            </div> \n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>";
 
-
-    __webpack_exports__["default"] = "\n<div class=\"container content mt-4\">\n    <div class=\"row\">\n        <div class=\"col-md-6\">\n            <div class=\"row bg-success justify-content-center align-items-center\" style=\"height:80px\">\n                <div class=\"col-3 text-light h2 mt-3\">\n                    ToDo\n                </div>\n                <div style=\"height: 30px;\"></div>\n                <div class=\"col-md-6\" *ngIf=\"!Task\">\n                    <span style=\"color: red;\">\n                        Enter a Task to add into the Todo List</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"row mt-5 col-md-8\">\n            <div class=\"mt-2 col-md-6 mx-5 bg-success d-flex justify-content-center align-items-center \n                text-light h4\" style=\"margin-left: 0%;\">\n                <div class=\"col-md-8 d-flex\">\n                    <input type=\"text\" [(ngModel)]=\"Task\" style=\"width:200px; text-align: center;\">\n                    <div *ngIf=\"Task\">\n                        <button (click)=\"addToList()\" class=\"btn btn-light text-success\" style=\"margin-left: 30px;\">\n                            ADD TASK\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
-  /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html":
+  /***/"./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html":
   /*!**************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
     \**************************************************************************/
-
   /*! exports provided: default */
-
   /***/
   function node_modulesRawLoaderDistCjsJsSrcAppAppComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
-
-
     __webpack_exports__["default"] = "\n<router-outlet></router-outlet>\n\n<app-addtask></app-addtask>\n<app-delete-task></app-delete-task>";
+
     /***/
   },
 
-  /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/delete-task/delete-task.component.html":
+  /***/"./node_modules/raw-loader/dist/cjs.js!./src/app/delete-task/delete-task.component.html":
   /*!**********************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/delete-task/delete-task.component.html ***!
     \**********************************************************************************************/
-
   /*! exports provided: default */
-
   /***/
   function node_modulesRawLoaderDistCjsJsSrcAppDeleteTaskDeleteTaskComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
+    __webpack_exports__["default"] = "<section>\n    <div *ngFor=\"let items of array; let i = index\">\n        <div class=\"card-body\">\n            <div class=\"container\">\n                <div class=\"card\">\n                    <div class=\"row\">\n                        <div class=\"col-lg-10\">\n                            <div class=\"row mx-5 bg-success col-md-15\">\n                                <div class=\"card-body d-flex flex-row\">\n                                    <input type=\"checkbox\" [checked]=\"!items\" (change)=\"onChange($event, i)\"\n                                        title='Select the task you want to remove'>&nbsp;&nbsp;\n                                    <div class=\"label col-md-8\">\n                                        <span style=\"color: white;\">{{items}}</span>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>";
 
-
-    __webpack_exports__["default"] = "\n\n<div class=\"container content\">\n    <div class=\"row\">\n        <div class=\"col-md-6\">\n\n\n            <div *ngFor=\"let items of array; let i = index\">\n                <div class=\"d-flex bg-success  col-lg-12\" > \n                    <div class=\"col-4 text-light h5\"></div>\n                    <div style=\"margin-top: 3px;\">\n                        <input type=\"checkbox\" [checked]=\"!items\" (change)=\"onChange($event, i)\"\n                        title='Select the task you want to remove'>\n                    </div>\n                    <div class=\"badge badge-primary text-wrap col-lg-12\" style=\"width: 6rem;\">\n                        {{items}}\n                      </div>\n                </div>\n            </div>\n\n\n        </div>\n    </div>\n</div>";
     /***/
   },
 
-  /***/
-  "./node_modules/tslib/tslib.es6.js":
+  /***/"./node_modules/tslib/tslib.es6.js":
   /*!*****************************************!*\
     !*** ./node_modules/tslib/tslib.es6.js ***!
     \*****************************************/
-
   /*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
-
   /***/
   function node_modulesTslibTslibEs6Js(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__extends", function () {
       return __extends;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__assign", function () {
       return _assign;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__rest", function () {
       return __rest;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__decorate", function () {
       return __decorate;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__param", function () {
       return __param;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__metadata", function () {
       return __metadata;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__awaiter", function () {
       return __awaiter;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__generator", function () {
       return __generator;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__createBinding", function () {
       return __createBinding;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__exportStar", function () {
       return __exportStar;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__values", function () {
       return __values;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__read", function () {
       return __read;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__spread", function () {
       return __spread;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__spreadArrays", function () {
       return __spreadArrays;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__await", function () {
       return __await;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function () {
       return __asyncGenerator;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function () {
       return __asyncDelegator;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__asyncValues", function () {
       return __asyncValues;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function () {
       return __makeTemplateObject;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__importStar", function () {
       return __importStar;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__importDefault", function () {
       return __importDefault;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function () {
       return __classPrivateFieldGet;
     });
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function () {
       return __classPrivateFieldSet;
     });
@@ -260,9 +194,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
     PERFORMANCE OF THIS SOFTWARE.
     ***************************************************************************** */
-
     /* global Reflect, Promise */
-
 
     var _extendStatics = function extendStatics(d, b) {
       _extendStatics = Object.setPrototypeOf || {
@@ -270,80 +202,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       } instanceof Array && function (d, b) {
         d.__proto__ = b;
       } || function (d, b) {
-        for (var p in b) {
-          if (b.hasOwnProperty(p)) d[p] = b[p];
-        }
+        for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
       };
-
       return _extendStatics(d, b);
     };
-
     function __extends(d, b) {
       _extendStatics(d, b);
-
       function __() {
         this.constructor = d;
       }
-
       d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     }
-
     var _assign = function __assign() {
       _assign = Object.assign || function __assign(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
           s = arguments[i];
-
-          for (var p in s) {
-            if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-          }
+          for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
         }
-
         return t;
       };
-
       return _assign.apply(this, arguments);
     };
-
     function __rest(s, e) {
       var t = {};
-
-      for (var p in s) {
-        if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-      }
-
+      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
       if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
         if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
       }
       return t;
     }
-
     function __decorate(decorators, target, key, desc) {
       var c = arguments.length,
-          r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-          d;
-      if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-      }
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+      if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
       return c > 3 && r && Object.defineProperty(target, key, r), r;
     }
-
     function __param(paramIndex, decorator) {
       return function (target, key) {
         decorator(target, key, paramIndex);
       };
     }
-
     function __metadata(metadataKey, metadataValue) {
       if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
     }
-
     function __awaiter(thisArg, _arguments, P, generator) {
       function adopt(value) {
         return value instanceof P ? value : new P(function (resolve) {
           resolve(value);
         });
       }
-
       return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) {
           try {
@@ -352,7 +260,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             reject(e);
           }
         }
-
         function rejected(value) {
           try {
             step(generator["throw"](value));
@@ -360,29 +267,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             reject(e);
           }
         }
-
         function step(result) {
           result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
         }
-
         step((generator = generator.apply(thisArg, _arguments || [])).next());
       });
     }
-
     function __generator(thisArg, body) {
       var _ = {
-        label: 0,
-        sent: function sent() {
-          if (t[0] & 1) throw t[1];
-          return t[1];
+          label: 0,
+          sent: function sent() {
+            if (t[0] & 1) throw t[1];
+            return t[1];
+          },
+          trys: [],
+          ops: []
         },
-        trys: [],
-        ops: []
-      },
-          f,
-          y,
-          t,
-          g;
+        f,
+        y,
+        t,
+        g;
       return g = {
         next: verb(0),
         "throw": verb(1),
@@ -390,88 +294,66 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, typeof Symbol === "function" && (g[Symbol.iterator] = function () {
         return this;
       }), g;
-
       function verb(n) {
         return function (v) {
           return step([n, v]);
         };
       }
-
       function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
-
-        while (_) {
-          try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-
-            switch (op[0]) {
-              case 0:
-              case 1:
+        while (_) try {
+          if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          if (y = 0, t) op = [op[0] & 2, t.value];
+          switch (op[0]) {
+            case 0:
+            case 1:
+              t = op;
+              break;
+            case 4:
+              _.label++;
+              return {
+                value: op[1],
+                done: false
+              };
+            case 5:
+              _.label++;
+              y = op[1];
+              op = [0];
+              continue;
+            case 7:
+              op = _.ops.pop();
+              _.trys.pop();
+              continue;
+            default:
+              if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                _ = 0;
+                continue;
+              }
+              if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                _.label = op[1];
+                break;
+              }
+              if (op[0] === 6 && _.label < t[1]) {
+                _.label = t[1];
                 t = op;
                 break;
-
-              case 4:
-                _.label++;
-                return {
-                  value: op[1],
-                  done: false
-                };
-
-              case 5:
-                _.label++;
-                y = op[1];
-                op = [0];
-                continue;
-
-              case 7:
-                op = _.ops.pop();
-
-                _.trys.pop();
-
-                continue;
-
-              default:
-                if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
-                  _ = 0;
-                  continue;
-                }
-
-                if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
-                  _.label = op[1];
-                  break;
-                }
-
-                if (op[0] === 6 && _.label < t[1]) {
-                  _.label = t[1];
-                  t = op;
-                  break;
-                }
-
-                if (t && _.label < t[2]) {
-                  _.label = t[2];
-
-                  _.ops.push(op);
-
-                  break;
-                }
-
-                if (t[2]) _.ops.pop();
-
-                _.trys.pop();
-
-                continue;
-            }
-
-            op = body.call(thisArg, _);
-          } catch (e) {
-            op = [6, e];
-            y = 0;
-          } finally {
-            f = t = 0;
+              }
+              if (t && _.label < t[2]) {
+                _.label = t[2];
+                _.ops.push(op);
+                break;
+              }
+              if (t[2]) _.ops.pop();
+              _.trys.pop();
+              continue;
           }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [6, e];
+          y = 0;
+        } finally {
+          f = t = 0;
         }
-
         if (op[0] & 5) throw op[1];
         return {
           value: op[0] ? op[1] : void 0,
@@ -479,22 +361,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         };
       }
     }
-
     function __createBinding(o, m, k, k2) {
       if (k2 === undefined) k2 = k;
       o[k2] = m[k];
     }
-
     function __exportStar(m, exports) {
-      for (var p in m) {
-        if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
-      }
+      for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
     }
-
     function __values(o) {
       var s = typeof Symbol === "function" && Symbol.iterator,
-          m = s && o[s],
-          i = 0;
+        m = s && o[s],
+        i = 0;
       if (m) return m.call(o);
       if (o && typeof o.length === "number") return {
         next: function next() {
@@ -507,19 +384,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       };
       throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
     }
-
     function __read(o, n) {
       var m = typeof Symbol === "function" && o[Symbol.iterator];
       if (!m) return o;
       var i = m.call(o),
-          r,
-          ar = [],
-          e;
-
+        r,
+        ar = [],
+        e;
       try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) {
-          ar.push(r.value);
-        }
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
       } catch (error) {
         e = {
           error: error
@@ -531,47 +404,29 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           if (e) throw e.error;
         }
       }
-
       return ar;
     }
-
     function __spread() {
-      for (var ar = [], i = 0; i < arguments.length; i++) {
-        ar = ar.concat(__read(arguments[i]));
-      }
-
+      for (var ar = [], i = 0; i < arguments.length; i++) ar = ar.concat(__read(arguments[i]));
       return ar;
     }
-
     function __spreadArrays() {
-      for (var s = 0, i = 0, il = arguments.length; i < il; i++) {
-        s += arguments[i].length;
-      }
-
-      for (var r = Array(s), k = 0, i = 0; i < il; i++) {
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++) {
-          r[k] = a[j];
-        }
-      }
-
+      for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+      for (var r = Array(s), k = 0, i = 0; i < il; i++) for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++) r[k] = a[j];
       return r;
     }
-
     ;
-
     function __await(v) {
       return this instanceof __await ? (this.v = v, this) : new __await(v);
     }
-
     function __asyncGenerator(thisArg, _arguments, generator) {
       if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
       var g = generator.apply(thisArg, _arguments || []),
-          i,
-          q = [];
+        i,
+        q = [];
       return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () {
         return this;
       }, i;
-
       function verb(n) {
         if (g[n]) i[n] = function (v) {
           return new Promise(function (a, b) {
@@ -579,7 +434,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
         };
       }
-
       function resume(n, v) {
         try {
           step(g[n](v));
@@ -587,24 +441,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           settle(q[0][3], e);
         }
       }
-
       function step(r) {
         r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
       }
-
       function fulfill(value) {
         resume("next", value);
       }
-
       function reject(value) {
         resume("throw", value);
       }
-
       function settle(f, v) {
         if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]);
       }
     }
-
     function __asyncDelegator(o) {
       var i, p;
       return i = {}, verb("next"), verb("throw", function (e) {
@@ -612,7 +461,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }), verb("return"), i[Symbol.iterator] = function () {
         return this;
       }, i;
-
       function verb(n, f) {
         i[n] = o[n] ? function (v) {
           return (p = !p) ? {
@@ -622,15 +470,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         } : f;
       }
     }
-
     function __asyncValues(o) {
       if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
       var m = o[Symbol.asyncIterator],
-          i;
+        i;
       return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () {
         return this;
       }, i);
-
       function verb(n) {
         i[n] = o[n] && function (v) {
           return new Promise(function (resolve, reject) {
@@ -638,7 +484,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
         };
       }
-
       function settle(resolve, reject, d, v) {
         Promise.resolve(v).then(function (v) {
           resolve({
@@ -648,7 +493,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }, reject);
       }
     }
-
     function __makeTemplateObject(cooked, raw) {
       if (Object.defineProperty) {
         Object.defineProperty(cooked, "raw", {
@@ -657,113 +501,79 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       } else {
         cooked.raw = raw;
       }
-
       return cooked;
     }
-
     ;
-
     function __importStar(mod) {
       if (mod && mod.__esModule) return mod;
       var result = {};
-      if (mod != null) for (var k in mod) {
-        if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-      }
+      if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
       result["default"] = mod;
       return result;
     }
-
     function __importDefault(mod) {
       return mod && mod.__esModule ? mod : {
         "default": mod
       };
     }
-
     function __classPrivateFieldGet(receiver, privateMap) {
       if (!privateMap.has(receiver)) {
         throw new TypeError("attempted to get private field on non-instance");
       }
-
       return privateMap.get(receiver);
     }
-
     function __classPrivateFieldSet(receiver, privateMap, value) {
       if (!privateMap.has(receiver)) {
         throw new TypeError("attempted to set private field on non-instance");
       }
-
       privateMap.set(receiver, value);
       return value;
     }
-    /***/
 
+    /***/
   },
 
-  /***/
-  "./src/app/addtask/addtask.component.css":
+  /***/"./src/app/addtask/addtask.component.css":
   /*!***********************************************!*\
     !*** ./src/app/addtask/addtask.component.css ***!
     \***********************************************/
-
   /*! exports provided: default */
-
   /***/
   function srcAppAddtaskAddtaskComponentCss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
+    __webpack_exports__["default"] = ".section {\r\n    padding: 70px 0;\r\n    position: relative;\r\n    background: #FFFFFF;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRkdGFzay9hZGR0YXNrLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLG1CQUFtQjtFQUNyQiIsImZpbGUiOiJzcmMvYXBwL2FkZHRhc2svYWRkdGFzay5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNlY3Rpb24ge1xyXG4gICAgcGFkZGluZzogNzBweCAwO1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgYmFja2dyb3VuZDogI0ZGRkZGRjtcclxuICB9Il19 */";
 
-
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkZHRhc2svYWRkdGFzay5jb21wb25lbnQuY3NzIn0= */";
     /***/
   },
 
-  /***/
-  "./src/app/addtask/addtask.component.ts":
+  /***/"./src/app/addtask/addtask.component.ts":
   /*!**********************************************!*\
     !*** ./src/app/addtask/addtask.component.ts ***!
     \**********************************************/
-
   /*! exports provided: AddtaskComponent */
-
   /***/
   function srcAppAddtaskAddtaskComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "AddtaskComponent", function () {
       return AddtaskComponent;
     });
     /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
     /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
-
-
-    var _todo_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ../todo-service.service */
-    "./src/app/todo-service.service.ts");
-
+    var _todo_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__( /*! ../todo-service.service */"./src/app/todo-service.service.ts");
     var AddtaskComponent = /*#__PURE__*/function () {
       function AddtaskComponent(ds) {
         _classCallCheck(this, AddtaskComponent);
-
         this.ds = ds;
       }
-
       _createClass(AddtaskComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
@@ -774,296 +584,186 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.Task = '';
         }
       }]);
-
       return AddtaskComponent;
     }();
-
     AddtaskComponent.ctorParameters = function () {
       return [{
         type: _todo_service_service__WEBPACK_IMPORTED_MODULE_2__["TodoServiceService"]
       }];
     };
-
     AddtaskComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-addtask',
-      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./addtask.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/addtask/addtask.component.html"))["default"],
-      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./addtask.component.css */
-      "./src/app/addtask/addtask.component.css"))["default"]]
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__( /*! raw-loader!./addtask.component.html */"./node_modules/raw-loader/dist/cjs.js!./src/app/addtask/addtask.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__( /*! ./addtask.component.css */"./src/app/addtask/addtask.component.css"))["default"]]
     })], AddtaskComponent);
+
     /***/
   },
 
-  /***/
-  "./src/app/app-routing.module.ts":
+  /***/"./src/app/app-routing.module.ts":
   /*!***************************************!*\
     !*** ./src/app/app-routing.module.ts ***!
     \***************************************/
-
   /*! exports provided: AppRoutingModule */
-
   /***/
   function srcAppAppRoutingModuleTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function () {
       return AppRoutingModule;
     });
     /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
     /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
-
-
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/router */
-    "./node_modules/@angular/router/fesm2015/router.js");
-
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__( /*! @angular/router */"./node_modules/@angular/router/fesm2015/router.js");
     var routes = [];
-
     var AppRoutingModule = /*#__PURE__*/_createClass(function AppRoutingModule() {
       _classCallCheck(this, AppRoutingModule);
     });
-
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
       exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
     })], AppRoutingModule);
+
     /***/
   },
 
-  /***/
-  "./src/app/app.component.css":
+  /***/"./src/app/app.component.css":
   /*!***********************************!*\
     !*** ./src/app/app.component.css ***!
     \***********************************/
-
   /*! exports provided: default */
-
   /***/
   function srcAppAppComponentCss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
-
-
     __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */";
+
     /***/
   },
 
-  /***/
-  "./src/app/app.component.ts":
+  /***/"./src/app/app.component.ts":
   /*!**********************************!*\
     !*** ./src/app/app.component.ts ***!
     \**********************************/
-
   /*! exports provided: AppComponent */
-
   /***/
   function srcAppAppComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "AppComponent", function () {
       return AppComponent;
     });
     /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
     /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
     var AppComponent = /*#__PURE__*/_createClass(function AppComponent() {
       _classCallCheck(this, AppComponent);
-
       this.title = 'ToDo';
     });
-
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-root',
-      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./app.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html"))["default"],
-      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./app.component.css */
-      "./src/app/app.component.css"))["default"]]
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__( /*! raw-loader!./app.component.html */"./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__( /*! ./app.component.css */"./src/app/app.component.css"))["default"]]
     })], AppComponent);
+
     /***/
   },
 
-  /***/
-  "./src/app/app.module.ts":
+  /***/"./src/app/app.module.ts":
   /*!*******************************!*\
     !*** ./src/app/app.module.ts ***!
     \*******************************/
-
   /*! exports provided: AppModule */
-
   /***/
   function srcAppAppModuleTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "AppModule", function () {
       return AppModule;
     });
     /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
     /* harmony import */
-
-
-    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/platform-browser */
-    "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/platform-browser */"./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
     /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
+    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
-
-
-    var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./app-routing.module */
-    "./src/app/app-routing.module.ts");
+    var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__( /*! ./app-routing.module */"./src/app/app-routing.module.ts");
     /* harmony import */
-
-
-    var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ./app.component */
-    "./src/app/app.component.ts");
+    var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__( /*! ./app.component */"./src/app/app.component.ts");
     /* harmony import */
-
-
-    var _addtask_addtask_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! ./addtask/addtask.component */
-    "./src/app/addtask/addtask.component.ts");
+    var _addtask_addtask_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__( /*! ./addtask/addtask.component */"./src/app/addtask/addtask.component.ts");
     /* harmony import */
-
-
-    var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-    /*! @angular/forms */
-    "./node_modules/@angular/forms/fesm2015/forms.js");
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__( /*! @angular/forms */"./node_modules/@angular/forms/fesm2015/forms.js");
     /* harmony import */
-
-
-    var _delete_task_delete_task_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
-    /*! ./delete-task/delete-task.component */
-    "./src/app/delete-task/delete-task.component.ts");
-
+    var _delete_task_delete_task_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__( /*! ./delete-task/delete-task.component */"./src/app/delete-task/delete-task.component.ts");
     var AppModule = /*#__PURE__*/_createClass(function AppModule() {
       _classCallCheck(this, AppModule);
     });
-
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _addtask_addtask_component__WEBPACK_IMPORTED_MODULE_5__["AddtaskComponent"], _delete_task_delete_task_component__WEBPACK_IMPORTED_MODULE_7__["DeleteTaskComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
+
     /***/
   },
 
-  /***/
-  "./src/app/delete-task/delete-task.component.css":
+  /***/"./src/app/delete-task/delete-task.component.css":
   /*!*******************************************************!*\
     !*** ./src/app/delete-task/delete-task.component.css ***!
     \*******************************************************/
-
   /*! exports provided: default */
-
   /***/
   function srcAppDeleteTaskDeleteTaskComponentCss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
-
-
     __webpack_exports__["default"] = "/* ToolTip classses */ \r\n.tooltip {\r\n    display: inline-block;    \r\n} \r\n.tooltip .tooltiptext {\r\n    margin-left:9px;\r\n    width : 320px;\r\n    visibility: hidden;\r\n    background-color: #FFF;\r\n    border-radius:4px;\r\n    border: 1px solid #aeaeae;\r\n    position: absolute;\r\n    z-index: 1;\r\n    padding: 5px;\r\n    margin-top : -15px; \r\n    opacity: 0;\r\n    transition: opacity 0.5s;\r\n} \r\n.tooltip .tooltiptext::after {\r\n    content: \" \";\r\n    position: absolute;\r\n    top: 5%;\r\n    right: 100%;  \r\n    /* margin-top: -5px; */\r\n    border-width: 5px;\r\n    border-style: solid;\r\n    border-color: transparent #aeaeae transparent transparent;\r\n} \r\n.tooltip:hover .tooltiptext {\r\n    visibility: visible;\r\n    opacity: 1;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGVsZXRlLXRhc2svZGVsZXRlLXRhc2suY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxQkFBcUI7QUFDckI7SUFDSSxxQkFBcUI7QUFDekI7QUFDQTtJQUNJLGVBQWU7SUFDZixhQUFhO0lBQ2Isa0JBQWtCO0lBQ2xCLHNCQUFzQjtJQUN0QixpQkFBaUI7SUFDakIseUJBQXlCO0lBQ3pCLGtCQUFrQjtJQUNsQixVQUFVO0lBQ1YsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixVQUFVO0lBQ1Ysd0JBQXdCO0FBQzVCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLE9BQU87SUFDUCxXQUFXO0lBQ1gsc0JBQXNCO0lBQ3RCLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIseURBQXlEO0FBQzdEO0FBR0E7SUFDSSxtQkFBbUI7SUFDbkIsVUFBVTtBQUNkIiwiZmlsZSI6InNyYy9hcHAvZGVsZXRlLXRhc2svZGVsZXRlLXRhc2suY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFRvb2xUaXAgY2xhc3NzZXMgKi8gXHJcbi50b29sdGlwIHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsgICAgXHJcbn1cclxuLnRvb2x0aXAgLnRvb2x0aXB0ZXh0IHtcclxuICAgIG1hcmdpbi1sZWZ0OjlweDtcclxuICAgIHdpZHRoIDogMzIwcHg7XHJcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRkZGO1xyXG4gICAgYm9yZGVyLXJhZGl1czo0cHg7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjYWVhZWFlO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgei1pbmRleDogMTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIG1hcmdpbi10b3AgOiAtMTVweDsgXHJcbiAgICBvcGFjaXR5OiAwO1xyXG4gICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjVzO1xyXG59XHJcbi50b29sdGlwIC50b29sdGlwdGV4dDo6YWZ0ZXIge1xyXG4gICAgY29udGVudDogXCIgXCI7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDUlO1xyXG4gICAgcmlnaHQ6IDEwMCU7ICBcclxuICAgIC8qIG1hcmdpbi10b3A6IC01cHg7ICovXHJcbiAgICBib3JkZXItd2lkdGg6IDVweDtcclxuICAgIGJvcmRlci1zdHlsZTogc29saWQ7XHJcbiAgICBib3JkZXItY29sb3I6IHRyYW5zcGFyZW50ICNhZWFlYWUgdHJhbnNwYXJlbnQgdHJhbnNwYXJlbnQ7XHJcbn1cclxuXHJcblxyXG4udG9vbHRpcDpob3ZlciAudG9vbHRpcHRleHQge1xyXG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcclxuICAgIG9wYWNpdHk6IDE7XHJcbn0iXX0= */";
+
     /***/
   },
 
-  /***/
-  "./src/app/delete-task/delete-task.component.ts":
+  /***/"./src/app/delete-task/delete-task.component.ts":
   /*!******************************************************!*\
     !*** ./src/app/delete-task/delete-task.component.ts ***!
     \******************************************************/
-
   /*! exports provided: DeleteTaskComponent */
-
   /***/
   function srcAppDeleteTaskDeleteTaskComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "DeleteTaskComponent", function () {
       return DeleteTaskComponent;
     });
     /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
     /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
-
-
-    var _todo_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ../todo-service.service */
-    "./src/app/todo-service.service.ts");
-
+    var _todo_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__( /*! ../todo-service.service */"./src/app/todo-service.service.ts");
     var DeleteTaskComponent = /*#__PURE__*/function () {
       function DeleteTaskComponent(ds) {
         _classCallCheck(this, DeleteTaskComponent);
-
         this.ds = ds;
         this.array = [];
       }
-
       _createClass(DeleteTaskComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
@@ -1079,106 +779,75 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function onChange(event, index) {
           // console.log('indexTodo',index);
           this.array.splice(index, 1);
-
           if (this.array.length == 0) {
             alert("It's the last Task on our Todo list");
           }
         }
       }]);
-
       return DeleteTaskComponent;
     }();
-
     DeleteTaskComponent.ctorParameters = function () {
       return [{
         type: _todo_service_service__WEBPACK_IMPORTED_MODULE_2__["TodoServiceService"]
       }];
     };
-
     DeleteTaskComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-delete-task',
-      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./delete-task.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/delete-task/delete-task.component.html"))["default"],
-      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./delete-task.component.css */
-      "./src/app/delete-task/delete-task.component.css"))["default"]]
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__( /*! raw-loader!./delete-task.component.html */"./node_modules/raw-loader/dist/cjs.js!./src/app/delete-task/delete-task.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__( /*! ./delete-task.component.css */"./src/app/delete-task/delete-task.component.css"))["default"]]
     })], DeleteTaskComponent);
+
     /***/
   },
 
-  /***/
-  "./src/app/todo-service.service.ts":
+  /***/"./src/app/todo-service.service.ts":
   /*!*****************************************!*\
     !*** ./src/app/todo-service.service.ts ***!
     \*****************************************/
-
   /*! exports provided: TodoServiceService */
-
   /***/
   function srcAppTodoServiceServiceTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "TodoServiceService", function () {
       return TodoServiceService;
     });
     /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
     /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
     var TodoServiceService = /*#__PURE__*/_createClass(function TodoServiceService() {
       _classCallCheck(this, TodoServiceService);
-
       this.items = [];
     });
-
     TodoServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: 'root'
     })], TodoServiceService);
+
     /***/
   },
 
-  /***/
-  "./src/environments/environment.ts":
+  /***/"./src/environments/environment.ts":
   /*!*****************************************!*\
     !*** ./src/environments/environment.ts ***!
     \*****************************************/
-
   /*! exports provided: environment */
-
   /***/
   function srcEnvironmentsEnvironmentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "environment", function () {
       return environment;
     });
     /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js"); // This file can be replaced during build by using the `fileReplacements` array.
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
+    // This file can be replaced during build by using the `fileReplacements` array.
     // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
     // The list of file replacements can be found in `angular.json`.
-
 
     var environment = {
       production: false
@@ -1195,73 +864,45 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /***/
   },
 
-  /***/
-  "./src/main.ts":
+  /***/"./src/main.ts":
   /*!*********************!*\
     !*** ./src/main.ts ***!
     \*********************/
-
   /*! no exports provided */
-
   /***/
   function srcMainTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
     /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
-
-
-    var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/platform-browser-dynamic */
-    "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
+    var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__( /*! @angular/platform-browser-dynamic */"./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
     /* harmony import */
-
-
-    var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./app/app.module */
-    "./src/app/app.module.ts");
+    var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__( /*! ./app/app.module */"./src/app/app.module.ts");
     /* harmony import */
-
-
-    var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ./environments/environment */
-    "./src/environments/environment.ts");
-
+    var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__( /*! ./environments/environment */"./src/environments/environment.ts");
     if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
       Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
     }
-
     Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])["catch"](function (err) {
       return console.error(err);
     });
+
     /***/
   },
 
-  /***/
-  0:
+  /***/0:
   /*!***************************!*\
     !*** multi ./src/main.ts ***!
     \***************************/
-
   /*! no static exports found */
-
   /***/
   function _(module, exports, __webpack_require__) {
-    module.exports = __webpack_require__(
-    /*! D:\ToDo (1)\ToDo\src\main.ts */
-    "./src/main.ts");
+    module.exports = __webpack_require__( /*! E:\Arsha\Personal Angular projects\TodoApp\src\main.ts */"./src/main.ts");
+
     /***/
   }
 }, [[0, "runtime", "vendor"]]]);

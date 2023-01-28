@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container content mt-4\">\n    <div class=\"row\">\n        <div class=\"col-md-6\">\n            <div class=\"row bg-success justify-content-center align-items-center\" style=\"height:80px\">\n                <div class=\"col-3 text-light h2 mt-3\">\n                    ToDo\n                </div>\n                <div style=\"height: 30px;\"></div>\n                <div class=\"col-md-6\" *ngIf=\"!Task\">\n                    <span style=\"color: red;\">\n                        Enter a Task to add into the Todo List</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"row mt-5 col-md-8\">\n            <div class=\"mt-2 col-md-6 mx-5 bg-success d-flex justify-content-center align-items-center \n                text-light h4\" style=\"margin-left: 0%;\">\n                <div class=\"col-md-8 d-flex\">\n                    <input type=\"text\" [(ngModel)]=\"Task\" style=\"width:200px; text-align: center;\">\n                    <div *ngIf=\"Task\">\n                        <button (click)=\"addToList()\" class=\"btn btn-light text-success\" style=\"margin-left: 30px;\">\n                            ADD TASK\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row bg-success justify-content-center align-items-center\" style=\"height:80px\">\n    <div class=\"col-1 text-light h2 \">\n        ToDo\n    </div>\n</div>\n<div class=\"card-body mx-5\">\n    <div class=\"col-md-4 mx-5\" *ngIf=\"!Task\">\n        <span style=\"color: red;font-weight: bold;\">\n            Enter a Task to add into the Todo List</span>\n    </div>\n</div>\n<div class=\"card-body\">\n    <div class=\"container\">\n        <div class=\"card\">\n            <div class=\"row\">\n                <div class=\"col-lg-6\">\n                    <div class=\"card-body\">\n                        <div class=\"row  mx-5\">\n                            <div class=\" d-flex justify-content-center align-items-center \n                                text-light h4\">\n                                <div class=\"d-flex mx-5\">\n                                    <input type=\"text\" [(ngModel)]=\"Task\" style=\"width:220px; text-align: center;\">\n                                    <div *ngIf=\"Task\">\n                                        <button (click)=\"addToList()\" class=\"btn btn-light text-success\" style=\"margin-left: 30px;\">\n                                            ADD TASK\n                                        </button>\n                                    </div>\n                                </div>\n                            </div> \n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n\n<div class=\"container content\">\n    <div class=\"row\">\n        <div class=\"col-md-6\">\n\n\n            <div *ngFor=\"let items of array; let i = index\">\n                <div class=\"d-flex bg-success  col-lg-12\" > \n                    <div class=\"col-4 text-light h5\"></div>\n                    <div style=\"margin-top: 3px;\">\n                        <input type=\"checkbox\" [checked]=\"!items\" (change)=\"onChange($event, i)\"\n                        title='Select the task you want to remove'>\n                    </div>\n                    <div class=\"badge badge-primary text-wrap col-lg-12\" style=\"width: 6rem;\">\n                        {{items}}\n                      </div>\n                </div>\n            </div>\n\n\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<section>\n    <div *ngFor=\"let items of array; let i = index\">\n        <div class=\"card-body\">\n            <div class=\"container\">\n                <div class=\"card\">\n                    <div class=\"row\">\n                        <div class=\"col-lg-10\">\n                            <div class=\"row mx-5 bg-success col-md-15\">\n                                <div class=\"card-body d-flex flex-row\">\n                                    <input type=\"checkbox\" [checked]=\"!items\" (change)=\"onChange($event, i)\"\n                                        title='Select the task you want to remove'>&nbsp;&nbsp;\n                                    <div class=\"label col-md-8\">\n                                        <span style=\"color: white;\">{{items}}</span>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>");
 
 /***/ }),
 
@@ -325,7 +325,7 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkZHRhc2svYWRkdGFzay5jb21wb25lbnQuY3NzIn0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".section {\r\n    padding: 70px 0;\r\n    position: relative;\r\n    background: #FFFFFF;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRkdGFzay9hZGR0YXNrLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLG1CQUFtQjtFQUNyQiIsImZpbGUiOiJzcmMvYXBwL2FkZHRhc2svYWRkdGFzay5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNlY3Rpb24ge1xyXG4gICAgcGFkZGluZzogNzBweCAwO1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgYmFja2dyb3VuZDogI0ZGRkZGRjtcclxuICB9Il19 */");
 
 /***/ }),
 
@@ -651,7 +651,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\ToDo (1)\ToDo\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! E:\Arsha\Personal Angular projects\TodoApp\src\main.ts */"./src/main.ts");
 
 
 /***/ })

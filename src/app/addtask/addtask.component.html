@@ -1,27 +1,33 @@
-
-<div class="container content mt-4">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row bg-success justify-content-center align-items-center" style="height:80px">
-                <div class="col-3 text-light h2 mt-3">
-                    ToDo
-                </div>
-                <div style="height: 30px;"></div>
-                <div class="col-md-6" *ngIf="!Task">
-                    <span style="color: red;">
-                        Enter a Task to add into the Todo List</span>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5 col-md-8">
-            <div class="mt-2 col-md-6 mx-5 bg-success d-flex justify-content-center align-items-center 
-                text-light h4" style="margin-left: 0%;">
-                <div class="col-md-8 d-flex">
-                    <input type="text" [(ngModel)]="Task" style="width:200px; text-align: center;">
-                    <div *ngIf="Task">
-                        <button (click)="addToList()" class="btn btn-light text-success" style="margin-left: 30px;">
-                            ADD TASK
-                        </button>
+<div class="row bg-success justify-content-center align-items-center" style="height:80px">
+    <div class="col-1 text-light h2 ">
+        ToDo
+    </div>
+</div>
+<div class="card-body mx-5">
+    <div class="col-md-4 mx-5" *ngIf="!Task">
+        <span style="color: red;font-weight: bold;">
+            Enter a Task to add into the Todo List</span>
+    </div>
+</div>
+<div class="card-body">
+    <div class="container">
+        <div class="card">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card-body">
+                        <div class="row  mx-5">
+                            <div class=" d-flex justify-content-center align-items-center 
+                                text-light h4">
+                                <div class="d-flex mx-5">
+                                    <input type="text" [(ngModel)]="Task" style="width:220px; text-align: center;">
+                                    <div *ngIf="Task">
+                                        <button (click)="addToList()" class="btn btn-light text-success" style="margin-left: 30px;">
+                                            ADD TASK
+                                        </button>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
                 </div>
             </div>
